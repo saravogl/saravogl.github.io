@@ -1,19 +1,52 @@
-// Page will open to h1 and nav cenetered on page with full-stretch background image
+// Back to top button //
 
-// Two options for page navigation: 
+var amountScrolled = 300;
 
-// Option 1: User clicks on nav links...
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
 
-// When user clicks on a nav link, page will scroll to the appropriate section.
-// Nav bar will be fixed to the top of the page permanently as the user scrolls.
+$('a.back-to-top').on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700); // speed of transition //
+	return false;
+});
 
-// Option 2: User scrolls...
 
-// When user scrolls, nav bar becomes permanently fixed to the top of the page
+// Scroll to section //
 
-// Notes: I'm in the process of figuring out the styling of my page, which makes
-// it difficult to think through other js and jquery methods at this time. By next 
-// week/end, I plan to have fleshed out my content a bit more (right now, it's mostly
-// song lyrics) and have a better idea for the styling of my page. But I think taking 
-// some time this week to research and look around the web will help me find some ideas 
-// and challenges to take on for my css and js. 
+$('.menu a').on('click', function(e) {
+	e.preventDefault();
+    var href = $(this).attr('href');
+    var anchor = $(href).offset();
+    $('body').animate({ scrollTop: anchor.top }, 700);
+    return false;
+}); 
+
+// 'Contact me' to Say Hello Section //
+
+$('.lets-dance a:last-of-type').on('click', function(e) {
+	e.preventDefault();
+    var href = $(this).attr('href');
+    var anchor = $(href).offset();
+    $('body').animate({ scrollTop: anchor.top }, 700);
+    return false;
+}); 
+
+// Fixed Scroll Menu //
+
+var num = 300; //number of pixels before modifying styles
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.menu').addClass('fixed');
+    } else {
+        $('.menu').removeClass('fixed');
+    }
+});
