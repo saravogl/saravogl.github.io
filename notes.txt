@@ -8,15 +8,16 @@ Other things I would like to do to the site? The list goes on and on, but here's
 
 - Make entire site responsive!
 - Add copy that isn't dumb (!important)
-- Add rad hamburger menu; include better menu styling
+- Add better hamburger menu; include better menu styling and JS.
 - Fixed Menu: Figure out how to make .fixed work when resizing screen (if screen has been resized but NOT refreshed, the code doesn't function how I would like it to) 
+- Bug Fix: When page is new/refreshed, clicking on a menu item will take you to the first paragraph in the section, instead of stopping at the h2. On the next click of a menu item, the scroll transition functions appropriately. Weirddd, man. 
 - Images: Add parallax scrolling; I had trouble with this due to the overlay
 - Sections: Explore border/drop shadow options to add more dimension to the site
 - Back-to-top button: Add border with transition 
 - Menu Links: Add better hover state / transition
 - Photos: My photos were all taken from my instagram account; I think it's a good place to start but I would evetually like to get some professional photography up in hereeeeee. 
 
-Anywho, that's where I stand right now. Big shout out to you for being an awesome and knowledgeable teacher. You da real MVP.
+Anywho, that's where I stand right now. Big shout out to you for being an awesome and knowledgeable instructor. You da real MVP.
 
 Thanks for everything! 
 Sara 
