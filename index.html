@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Sara Vogl</title>
     <meta name="description" content="Sara Vogl Portfolio Page">
 
-
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,100,700,300,400italic,600' rel='stylesheet' type='text/css'><!-- Google Font Josefin Slab-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!-- Google Font Roboto -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"><!-- social media icon stylesheet -->
@@ -17,24 +19,34 @@
   </head>
   <body>
 
-    <!-- <div class="container">Beginning of Container -->
-  <!--   <div class="parallax-window" data-parallax="scroll" data-image-src="images/nyc.jpg"></div> -->
+	  	<div class="home"><!-- home div  -->	
+	  		
 
-	  	<div class="home"><!-- home div  -->		  
-	      	<header>
-	        	<h1>sara<span>vogl</span></h1>
-	      	</header>
-      
-	    <div class="menu">     
+	  		<div class="mobile-nav">
+	  			<!-- hamburger icon (uses fontawesome icon) -->
+	    		<i class="fa fa-bars hamburger"></i>
+	    		<ul>
+					<li><a href="#about-me"><span>about</span>me</a></li>
+					<li><a href="#life-work"><span>life</span>work</a></li>
+					<li><a href="#lets-dance"><span>let's</span>dance</a></li>
+					<li><a href="#say-hello"><span>say</span>hello</a></li>
+		      	</ul>
+		    </div>
+
+	  			  
+		      	<header class="home-title">
+		        	<h1>sara<span>vogl</span></h1>
+		      	</header>	
+    
 	        <nav>
-	        	<ul>
+	        	<ul class="menu">
 					<li><a href="#about-me"><span>about</span>me</a></li>
 					<li><a href="#life-work"><span>life</span>work</a></li>
 					<li><a href="#lets-dance"><span>let's</span>dance</a></li>
 					<li><a href="#say-hello"><span>say</span>hello</a></li>
 				</ul>
 	        </nav>
-        </div>
+       <!--  </div> -->
 
         <div class="socialbtns">
 			<ul>
@@ -52,7 +64,7 @@
 		  		
 				<p>Hey, it’s me. Sara without an ‘h’.  I’m not sure how you found your way to my page, but I’m glad you’re here!</p>
 
-				<p>If you’re here on purpose, you probably already know a thing or two about me – so feel free to skip ahead. For those of you who I’ve never met, let’s take a minute to get virtually acquainted, shall we?</p>
+				<p>If you knowingly made your way to my site, you probably already know a thing or two about me – so feel free to skip ahead. For those of you who I’ve never met, let’s take a minute to get virtually acquainted, shall we?</p>
 
 				<p>First things first: I’m *really* proud to say I built this site from the ground up. No template, no WordPress, no Squarespace -- just good ‘ole HTML, CSS, jQuery, and JavaScript. It’s still a work in progress, so feel free to let me know your thoughts -- the good, the bad, and the ugly. (I grew up with a brother so I know how to take a punch…or two, or three, or four.)</p>
 
@@ -65,14 +77,17 @@
 	  	</div>		
 
 	  	<div class="life-work section-padding" id="life-work">
+
+	  		<div class="life-work-content">
 		  	<h2><span>life</span>work</h2>
 
-				<p>Boys workin' on empty. Is that the kinda way to face the burning heat? I just think about my baby. I'm so full of love I could barely eat. There's nothing sweeter than my baby. I'd never want once from the cherry tree. 'Cause my baby's sweet as can be. She give me toothaches just from kissin' me. When, my, time comes around, lay me gently in the cold dark earth. No grave can hold my body down, I'll crawl home to her.</p>
+				<p>Growing up, I was always a little jealous of those people who knew *exactly* what they wanted to be when they grew up. Sure, not all of my friends realized their dreams of becoming astronauts or the President of the United States, but a lot of my classmates did grow up to be doctors, teachers, firemen, nurses, and scientists -- which is incredible, when you think about it. I, on the other-hand, am still one of the many trying to figure out what I want to be when I grow up -- but I don't see that as a weakness; it's an opportunity to try new things. At this point in my life, I see success as taking the opportunity to learn as much as I can at my job, seeking out new education opportunities (like the rad <a href="https://generalassemb.ly/education/front-end-web-development" target="_blank">General Assembly</a> course that helped me build this site), and constantly challenging myself to think creatively and unconventionally.</p>
 
-				<p>That's when my baby found me. I was three days on a drunken sin. I woke with her walls around me, nothin' in her room but an empty crib. And I was burnin' up a fever. I didn't care much how long I lived. But I swear I thought I dreamed her, she never asked me once about the wrong I did.</p>
+				<p>Now that you know a bit about me, I have to confess that I am currently living a double-life and I love it. By-day I’m a Director of Client Services for an enrollment and marketing services company, and by night I’m a Cardio Dance instructor at various studios and gyms around the city. Interested in talking business? <a href="#say-hello" class="hello">Say hello</a>. Want to dance it out together? <a href="#lets-dance" class="dance">Come join me at a class</a>. We can even combine both options, if you're into it.</p>
 
-				<p>Oh! Take a look at my <a href="#">resume</a> if you have a minute.</p>
-
+				<p>Oh! Take a look at my <a href="resume/resume.pdf" target="_blank">resume</a> if you have a minute.</p>
+		</div>
+		<div class="overlay image-life-work"></div>
 	  	</div>		
 	  
 	  	<div class="lets-dance section-padding" id="lets-dance">
@@ -80,10 +95,10 @@
 
 				<p>One of my greatest passions is empowering women to feel confident and comfortable in their own skin. This is something we all struggle with on a daily basis and the best way that I know to combat these negative thoughts is in the studio. You’d be surprised how much your attitude, stress-level, and mindset can change in 60-minutes when the music is blasting and you’re booty-shakin’ with a bunch of kick-ass women. Don’t believe me? Come sweat it out with me at one of my classes:</p>
 
-				<p>Sunday Funday: <a href="http://southportfitness.com/schedule.php">Southport Fitness</a>, Cardio Dance, 6pm</p>
-				<p>Wednesday (Hump Day): <a href="http://www.studiofitchicago.com/#home">Studio Fit</a>, Cardio Dance, 6pm</p>
-				<p>FriYAY: <a href="http://www.studiofitchicago.com/#home">Studio Fit</a>, Cardio Dance, 5:45pm</p>
-				<p>Want a private class for you and your girlfriends? I'm available for bachelorette parties, birthdays, or company events. <a href="#say-hello">Contact me</a> and let's chat!</p>
+				<p>Sunday Funday: <a href="http://southportfitness.com/schedule.php" target="_blank">Southport Fitness</a>, Cardio Dance, 6pm</p>
+				<p>Wednesday (Hump Day): <a href="http://www.studiofitchicago.com/#home" target="_blank">Studio Fit</a>, Cardio Dance, 6pm</p>
+				<p>FriYAY: <a href="http://www.studiofitchicago.com/#home" target="_blank">Studio Fit</a>, Cardio Dance, 5:45pm</p>
+				<p>Want a private class for you and your girlfriends? I'm available for bachelorette parties, birthdays, or company events. <a href="#say-hello" class="hello">Contact me</a> and let's chat!</p>
 
 		</div>		
      
@@ -94,12 +109,12 @@
 		
 				<p>Want to chat? Let’s grab coffee, exchange emails, set up a skype-date – you name it. Just send me an email with your name and the reason for your message and I’ll take it from there.</p>
 
-				<p>Cheers,</p>
-				<p>S</p>
+				<p>Cheers!</p>
+				<p class="signature">S</p>
 
 				<form action="http://formspree.io/saravogl11@gmail.com" method="POST" data-parsley-validate>
 		    	<label for="name">Name:</label>
-		    	<input id="name" type="text" name="name" placeholder="Name" required="true" data-parsley-error-message="I'm going to need to know what to call you!">
+		    	<input id="name" type="text" name="name" placeholder="Name" required="true" data-parsley-error-message="Can I have your name?">
 		    	<label id="email" for="email">Email:</label>
 		   		<input type="email" name="_replyto" placeholder="Email" required="true" data-parsley-type="email" data-parsley-error-message="Oops. I'm gonna need a valid email, please!">
 		    	<label for="message">Message:</label>
@@ -109,7 +124,7 @@
 				</form>
 		</div>
 
-		<div class="overlay"></div>
+		<div class="overlay image-say-hello"></div>
 	  	</div>	
 
 	  	<a href="" class="back-to-top">Back to top</a>	

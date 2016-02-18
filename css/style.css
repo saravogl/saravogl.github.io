@@ -47,21 +47,12 @@ footer {
   font-family:'Josefin Slab', serif;
 }
 
-nav {
-  /*margin-top: 4%;*/
-  font-weight: 100;
-  margin-bottom: 4%;
-  border-radius: 400px;
-  background: rgba(0,0,0,1);
-}
-
 nav ul {
-  padding-top: 30px;
+  margin-top: 0;
   padding-left: 0;
+  padding-top: 30px;
   padding-bottom: 30px;
   list-style-type: none;
-  margin-top: 0;
-
 }
 
 nav li {
@@ -88,7 +79,37 @@ nav span {
   font-weight: 600;
 }
 
+.home-title {
+  margin-top: 0;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 150px;
+}
 
+.home-title span {
+  font-weight: 100;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 50px;
+  padding-top: 11%;
+  font-weight: 100;
+}
+
+h2 span {
+  font-weight: 700;
+}
+
+main p {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-bottom: 1%;
+}
+
+a {
+  color: rgb(0,0,255);
+}
 
 footer {
   margin: 0;
@@ -108,48 +129,6 @@ footer ul {
   font-size: 16px;
 }
 
-h2 {
-  margin-top: 0;
-  padding-top: 10%;
-  font-size: 50px;
-  font-weight: 100;
-}
-
-h2 span {
-  font-weight: 700;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 80px;
-  font-weight: 700;
-  padding-top: 10%;
-}
-
-h1 span {
-  font-weight: 100;
-}
-
-main p {
-  font-size: 18px;
-  margin-bottom: 0;
-  padding-bottom: 1%;
-}
-
-a {
-  color: rgb(0,0,255);
-}
-
-form {
-  padding-bottom: 10%;
-}
-
-input, 
-textarea {
-  color: black;
-}
-
-
 /******************************************
 /* SOCIAL MEDIA BUTTONS
 /*******************************************/
@@ -160,10 +139,11 @@ a, a:hover {
     text-decoration: none;
 }
 
-.socialbtns, .socialbtns ul, .socialbtns li{
+.socialbtns, 
+.socialbtns ul, 
+.socialbtns li {
     margin: 0;
     padding: 5px;
-    padding-top: 50px;
 }
 
 .socialbtns li {
@@ -199,7 +179,7 @@ a, a:hover {
 }
 
  .home .socialbtns {
-  padding-bottom: 20%;
+  padding-bottom: 25%;
 }
 
 footer .socialbtns {
@@ -214,19 +194,28 @@ footer .socialbtns ul {
 /* CLASSES
 /*******************************************/
 
+.home, 
+.about-me,
+.life-work,
+.lets-dance,
+.say-hello {
+  min-height: 100vh;
+}
+
 .home {
    text-align: center;
    background-size: cover;
    background-repeat: no-repeat;
-   background-image: url("../images/nyc.jpg");
    background-attachment: fixed;
+   background-image: url("../images/nyc.jpg");
 }
 
 .menu {
   width: 70%;
-  margin-left: 15%;
-  margin-right: 50%;
-  position: absolute;
+  margin: 0 auto 4%;
+  font-weight: 100;
+  border-radius: 400px;
+  background: rgba(0,0,0,1);
 }
 
 .about-me {
@@ -234,36 +223,13 @@ footer .socialbtns ul {
   background: rgb(250,218,221);
 }
 
-.about-me p:last-of-type {
-  padding-bottom: 10%;
+.lets-dance {
+  background: rgb(250,218,221);
 }
 
-.life-work {
-    position: relative;
-    color: rgb(255,255,255);
-    background: rgb(0,0,0);
-    overflow: hidden;
-}
-
-.life-work:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.3;
-    background-image: url("../images/friends.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
+.lets-dance a {
+  color: rgb(0,0,0);
+  text-decoration: underline;
 }
 
 .life-work h2 p {
@@ -272,59 +238,9 @@ footer .socialbtns ul {
     color: rgb(255,255,255);
 } 
 
-.life-work p:last-of-type {
-  padding-bottom: 25%;
-}
-
 .life-work a {
   color: rgb(102,153,204);
   text-decoration: underline;
-}
-
-.lets-dance {
-  background: rgb(250,218,221);
-}
-
-.lets-dance p:last-of-type {
-  padding-bottom: 10%;
-}
-
-.lets-dance a {
-  color: rgb(0,0,0);
-  text-decoration: underline;
-}
-
-.say-hello {
-    position: relative;
-    color: rgb(255,255,255);
-    background: rgb(0,0,0);
-    overflow: hidden;
-}
-
-.say-hello-content {
-  position: relative;
-  z-index: 10;
-}
-
-.overlay {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.15;
-    background-image: url("../images/chris_sara.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .say-hello h2 p {
@@ -333,7 +249,7 @@ footer .socialbtns ul {
     color: rgb(255,255,255);
 } 
 
-.say-hello p:last-of-type {
+.say-hello .signature {
   margin-top: 0;
   padding-bottom: 3%;
 }
@@ -343,27 +259,73 @@ footer .socialbtns ul {
 }
 
 /******************************************
+/* SECTION OVERLAYS
+/*******************************************/
+
+.life-work,
+.say-hello {
+    overflow: hidden;
+    position: relative;
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+}
+
+.life-work-content,
+.say-hello-content {
+  z-index: 10;
+  position: relative;
+}
+
+.image-life-work {
+    background-image: url("../images/friends.jpg");
+}
+
+.image-say-hello {
+    background-image: url("../images/chris_sara.jpg");
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    opacity: 0.15;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: 50% 0;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+}
+
+/******************************************
 /* SCROLL BACK-TO-TOP BUTTON
 /*******************************************/
 
 a.back-to-top {
-  display: none;
+  right: 20px;
   width: 60px;
   height: 60px;
-  text-indent: -9999px;
-  position: fixed;
   z-index: 999;
-  right: 20px;
   bottom: 20px;
-  background: rgb(0,0,0) url("../images/up-arrow.png") no-repeat center 43%;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
+  display: none;
+  position: fixed;
   border-radius: 30px;
+  text-indent: -9999px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  background: rgb(0,0,0) url("../images/up-arrow.png") no-repeat center 43%;
 }
 
 a.back-to-top:hover {
-  background: rgb(105,105,105) url("../images/up-arrow.png") no-repeat center 43%;
   border: rgb(0,0,0);
+  background: rgb(105,105,105) url("../images/up-arrow.png") no-repeat center 43%;
 }
 
 /******************************************
@@ -372,10 +334,13 @@ a.back-to-top:hover {
 
 form {
   width: 100%;
+  padding-bottom: 10%;
 }
 
-input, textarea {
+input, 
+textarea {
   width: 100%;
+  color: black;
   padding: 1em;
   display: block;
   margin: 0 0 1em;
@@ -400,8 +365,8 @@ input[type=submit] {
   padding: 1em;
   font-weight: 700;
   margin-top: 20px;
-  background: rgb(153,204,255);
   text-transform: uppercase;
+  background: rgb(153,204,255);
   transition: background .2s ease-out;
 }
 
@@ -431,31 +396,39 @@ input[type=submit]:hover {
   list-style: none;
 }
 
-
 /******************************************
 /* FIXED MENU
 /*******************************************/
 
 .fixed {
-    position:fixed;
     top: 0;
-    z-index: 20;
     width: 100%;
+    z-index: 20;
+    position:fixed;
     margin-left: 0%;
 }
 
+.menu.fixed {
+  border-radius: 0px;
+}
+
+nav {
+  z-index: 999;
+}
 
 /******************************************
 /* THANKS PAGE
 /*******************************************/
 
 .thanks-page {
-  background: rgb(250,218,221);
   text-align: center;
+  background: rgb(250,218,221);
+  min-height: 100vh;
 }
 
 .thanks-page h1 {
   font-weight: 300;
+  padding-top: 10%;
 }
 
 .thanks-page span {
@@ -463,10 +436,83 @@ input[type=submit]:hover {
 }
 
 .thanks-page footer {
-  padding-bottom: 250px;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
+/******************************************
+/* REPONSIVE DESIGN
+/*******************************************/
+
+/* Hide the hamburger icon by default */
+
+.hamburger {
+  cursor: pointer;
+}
+
+.mobile-nav {
+  background: rgb(0,0,0);
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: -200px;
+  width: 200px;
+  z-index: 9999;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav li {
+  padding-top: 40px;
+}
+
+.mobile-nav li:first-of-type {
+  padding-top: 10px;
+}
+
+.mobile-nav li:last-of-type {
+  padding-bottom: 10px;
+}
+
+.mobile-nav a {
+  color: rgb(255,255,255);
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+/* modifications for small screens */
+
+/*navigation breakpoint */
+
+@media only screen and (max-width: 870px) {
+
+.home-title {
+  padding-top: 120px;
+  display: block;
+}
+
+nav ul {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+.hamburger:before {
+  font-size: 30px;
+}
+
+
+}
 
 
 
