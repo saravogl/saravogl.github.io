@@ -445,10 +445,6 @@ nav {
 
 /* Hide the hamburger icon by default */
 
-.hamburger {
-  cursor: pointer;
-}
-
 .mobile-nav {
   top: 30px;
   width: 200px;
@@ -458,6 +454,7 @@ nav {
   position: absolute;
   border-radius: 10px;
   background: rgb(0,0,0);
+  font-family:'Josefin Slab', serif;
 }
 
 .mobile-nav ul {
@@ -467,7 +464,7 @@ nav {
 }
 
 .mobile-nav li {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .mobile-nav li:first-of-type {
@@ -479,12 +476,22 @@ nav {
 }
 
 .mobile-nav a {
+  font-size: 20px;
   color: rgb(255,255,255);
+}
+
+.mobile-nav a:hover {
+  color: rgb(153,204,255);
+}
+
+.mobile-nav span {
+  font-weight: 700;
 }
 
 .hamburger {
   top: 0;
-  left: -40px;
+  left: -50px;
+  cursor: pointer;
   position: absolute;
 }
 

@@ -1,1 +1,21 @@
 Hey Matt!
+
+So I'm pretty happy with how everything turned out considering that this is my first site EVER. It's pretty cool to think about. 
+
+That said, there is SO much more I would like to do that I just couldn't get to. First and foremost: refactoring! EEEK. I know my code isn't super clean, but I tried to organize it as best as I could with the time I had left. I would like to go through it with a fine-tooth comb and eliminate unecessary code, make sure I'm following best practices across the board, and simplify a lot of my CSS and JS. 
+
+Other things I would like to do to the site? The list goes on and on, but here's a sampling: 
+
+- Make entire site responsive!
+- Add copy that isn't dumb (!important)
+- Add rad hamburger menu; include better menu styling
+- Fixed Menu: Figure out how to make .fixed work when resizing screen (if screen has been resized but NOT refreshed, the code doesn't function how I would like it to) 
+- Images: Add parallax scrolling; I had trouble with this due to the overlay
+- Sections: Explore border/drop shadow options to add more dimension to the site
+- Back-to-top button: Add border with transition 
+- Menu Links: Add better hover state / transition
+
+Anywho, that's where I stand right now. Big shout out to you for being an awesome and knowledgeable teacher. You da real MVP.
+
+Thanks for everything! 
+Sara 
