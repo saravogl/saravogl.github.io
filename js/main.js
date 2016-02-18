@@ -80,7 +80,6 @@ $(window).bind('scroll', function () {
 
 $('.hamburger').on('click', function () {
     if ($('.mobile-nav').hasClass('open')) {
-        console.log($('.mobile-nav').width());
         $('.mobile-nav').animate({
             right: -200
         }, function() {
