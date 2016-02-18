@@ -212,8 +212,8 @@ footer .socialbtns ul {
 
 .menu {
   width: 70%;
-  margin: 0 auto 4%;
   font-weight: 100;
+  margin: 0 auto 4%;
   border-radius: 400px;
   background: rgba(0,0,0,1);
 }
@@ -421,9 +421,9 @@ nav {
 /*******************************************/
 
 .thanks-page {
+  min-height: 100vh;
   text-align: center;
   background: rgb(250,218,221);
-  min-height: 100vh;
 }
 
 .thanks-page h1 {
@@ -450,20 +450,20 @@ nav {
 }
 
 .mobile-nav {
-  background: rgb(0,0,0);
-  border-radius: 10px;
-  display: none;
-  position: absolute;
   top: 30px;
-  right: -200px;
   width: 200px;
   z-index: 9999;
+  right: -200px;
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background: rgb(0,0,0);
 }
 
 .mobile-nav ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .mobile-nav li {
@@ -483,20 +483,18 @@ nav {
 }
 
 .hamburger {
-  position: absolute;
   top: 0;
   left: -40px;
+  position: absolute;
 }
-
-/* modifications for small screens */
 
 /*navigation breakpoint */
 
 @media only screen and (max-width: 870px) {
 
 .home-title {
-  padding-top: 120px;
   display: block;
+  padding-top: 120px;
 }
 
 nav ul {

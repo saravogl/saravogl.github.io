@@ -34,7 +34,7 @@ $('.menu a').on('click', function(e) {
     return false;
 }); 
 
-// Lifework: 'Say Hello' to say hello section //
+// Lifework: On click of 'Say Hello' send to appropriate section //
 
 $('.life-work .hello').on('click', function(e) {
     e.preventDefault();
@@ -44,7 +44,7 @@ $('.life-work .hello').on('click', function(e) {
     return false;
 }); 
 
-// Lifework: 'Come join me at a class' to let's dance section //
+// Lifework: On click of 'Come join me at a class' send to 'Let's Dance' section //
 
 $('.life-work .dance').on('click', function(e) {
     e.preventDefault();
@@ -54,7 +54,7 @@ $('.life-work .dance').on('click', function(e) {
     return false;
 }); 
 
-// Let's Dance: 'Contact me' to Say Hello Section //
+// Let's Dance: On click of 'Contact me' send to 'Say Hello' Section //
 
 $('.lets-dance .hello').on('click', function(e) {
 	e.preventDefault();
@@ -92,7 +92,5 @@ $('.hamburger').on('click', function () {
         }, function() {
             $(this).addClass('open');
         });
-    }
-
-    
+    }    
 });
